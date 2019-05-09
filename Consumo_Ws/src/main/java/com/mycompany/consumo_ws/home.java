@@ -5,12 +5,12 @@
  */
 package com.mycompany.consumo_ws;
 
+import com.Ws.envia.varredura;
 import java.io.File;
 import javax.swing.JFileChooser;
 import modelo.Json;
 import dao.seguranca.Criptografia;
 //import dao.JsonDAO;
-import com.mycompany.consumo_ws.HttoRequest;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -203,9 +203,9 @@ public class home extends javax.swing.JFrame {
 //        JsonDAO j = new JsonDAO();
         Usuario u = new Usuario();
         varredura varrer = new varredura();
-        String senha = md5.criptografar(jPasswordField1.getText());
-        senha = senha.toLowerCase();
-        String login = jTextField1.getText();
+//        String senha = md5.criptografar(jPasswordField1.getText());
+//        senha = senha.toLowerCase();
+//        String login = jTextField1.getText();
 
         
 //        j.verificar_login(login, senha);
@@ -286,10 +286,8 @@ public class home extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new home().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new home().setVisible(true);
         });
     }
 

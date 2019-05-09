@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.consumo_ws;
+package com.Ws.envia;
 
+import com.Ws.envia.HttoRequest;
 import java.io.File;
 import java.util.logging.Level;
 import java.util.logging.Logger;
